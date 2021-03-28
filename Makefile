@@ -10,10 +10,10 @@ test:
 			#python -m pytest --nbval notebook.ipynb
 
 validate-circleci:
-		~/environment/circleci config process .circleci/config.yml
+		circleci config process .circleci/config.yml
 
 run-circleci-local:
-		~/environment/circleci local execute
+		circleci local execute
 
 lint:
 		hadolint Dockerfile
